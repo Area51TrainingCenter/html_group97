@@ -1,0 +1,135 @@
+/*
+selectores:
+selecciona a los elementos
+selectores por Id y class
+Id
+Class
+*/
+h1
+{
+	color:orange;
+
+}
+/*
+p{
+	color :red;
+}
+*/
+
+/* 
+seleccionando a los
+parrafos por ID 
+*/
+#texto1{
+	color: blue;
+}
+
+
+#texto2{
+	color: skyblue;
+
+}
+/* 
+seleccionando a los
+parrafos por class
+*/
+
+
+
+
+#parrafo3{
+	color: orange;
+}
+
+
+
+
+#nuevoparrafo{
+	color: red;
+}
+
+.parrafo4{
+	color: maroon;
+
+}
+
+p{
+	color: blue;
+}
+
+
+#nuevotexto{
+	color: green;
+}
+
+
+
+
+
+
+
+
+.btn-click{
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	background-color: black;
+}
+.text-red{
+	color: red;
+}
+
+
+.text-green{
+	color: green;
+}
+.text-yellow{
+	color: yellow;
+}
+
+/*.btn-click2{
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	background-color: black;
+
+}*/
+
+
+/** clases utilitarias **/
+
+.color-text-primary{
+color:blue;
+}
+.color-text-secundary{
+color:green;
+}
+.color-bg-primary{
+background-color:blue;
+}
+.color-bg-secundary{
+background-color:green;
+}
+
+.typefont1{
+	font-family: arial;
+}
+
+.typefont2{
+	font-family:helvetica;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+.caja1{
+	width: 120px;
+	height: 100px;
+	background-color: orange;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.caja2{
+	width: 120px;
+	height: 80px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: top;
+}
+.caja3{
+	width: 120px;
+	height: 170px;
+	background-color: blue;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.principal{
+	width: 700px;
+	height: 600px;
+	background-color: #ececec;
+}
+.box1{
+	width: 345px;
+	height: 100px;
+	background-color: red;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.box2{
+	width: 230px;
+	height: 200px;
+	background-color: blue;
+	display: inline-block;
+	vertical-align: top;
+}
+.box3{
+	width: 700px;
+	height: 200px;
+	background-color: yellow;
+	
+}

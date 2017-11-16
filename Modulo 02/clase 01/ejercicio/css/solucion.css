@@ -1,0 +1,59 @@
+body{
+	font-family: arial;
+}
+.wrapper{
+	width: 970px;
+	margin:0 auto;
+	
+}
+
+.title{
+	font-size: 34px;
+	text-align: center;
+
+}
+.pic-central{
+	/*width: 100%;*/
+	width: 970px;
+	/*width:970px;
+	height: auto;*/
+}
+
+.col-1{
+	width: 480px;
+	
+
+	display: inline-block;
+	vertical-align: top;
+
+}
+.parrafo1{
+	font-size: 20px;
+	line-height: 1.3;
+	text-align: center;
+}
+
+.center-content{
+	text-align: center;
+}
+
+.footer-site{
+	background-color: black;
+}
+.col4{
+width: 238px;
+
+/*width: 23%;*/
+
+display: inline-block;
+vertical-align: top;
+}
+
+.footer-site .col4 p {
+	color: white;
+}
+
+.parrafo-footer{
+	color: white;
+}
+

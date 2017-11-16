@@ -1,0 +1,30 @@
+/* selector por nombre de etiqueta **/
+/*p{
+	color: blue;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+}*/
+
+
+/* selector por class */
+.parrafo{
+	color: blue;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+}
+
+.texto2{
+color: orange;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    font-weight: bold;	
+}
+.texto3{
+	color: skyblue;
+}
+
+.texto4{
+	color: maroon;
+}

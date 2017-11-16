@@ -1,0 +1,40 @@
+.ui-title{
+	font-family: arial;
+	color: green;
+	font-size: 20px;
+	text-transform: capitalize;
+	/*text-decoration: underline;*/
+}
+.subrayado{
+	text-decoration: underline;
+}
+
+.title2{
+	text-decoration: line-through;
+}
+.parrafo1{
+	font-family: arial;
+
+	font-size: 17px;
+	/*text-align:justify;*/
+	letter-spacing: 2px;
+	word-spacing: 10px;
+	/*text-justify:inter-word;*/
+	text-align-last:right;
+	line-height:1;
+	font-weight: bold;
+	text-shadow:2px 4px 3px red;
+	-webkit-text-shadow:2px 4px 3px red;
+	-moz-text-shadow:2px 4px 3px red;
+	-ms-text-shadow:2px 4px 3px red;
+	-o-text-shadow:2px 4px 3px red;
+		
+	/* text-shadow: horizontal ,vertical, expansion de sombra, color de sombra;*/
+
+
+
+}
+
+display: inline
+display: block;
+display: inline-block;
