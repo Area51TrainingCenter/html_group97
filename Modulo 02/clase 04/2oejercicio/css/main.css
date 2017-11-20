@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+}
+body{font-family: arial}
+
+.fondo1{
+	background-color: black;
+}
+.header-site{
+	padding: 20px 50px;
+}
+.title{
+font-size: 25px;
+float: left;
+color: white;
+}
+.nav-site {
+	float: right;
+}
+.nav-site li{
+display: inline-block;
+vertical-align: top;
+color: white;
+font-size: 17px;
+margin: 10px;
+text-transform: uppercase;
+
+}
+.content1{
+	color: white;
+	text-align: center;
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.title-1{font-size: 30px;
+font-weight: bold}
+.text1{
+	line-height: 1.4;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.btn1{background-color: red;
+color: white;
+font-size: 15px;
+padding:15px;
+text-decoration: none;
+text-transform: uppercase;
+display: inline-block;
+}
+
+
+
+
+.clear{
+	clear: both;
+}
