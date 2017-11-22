@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div class="container">
+	<div class="box1"></div>
+	<div class="box2"></div>
+</div>
+</body>
+</html>
+<style type="text/css">
+	.box1{
+		width: 400px;
+		height: 200px;
+		display: inline-block;
+		vertical-align: top;
+		background-color: pink;
+	}
+	.box2{
+		width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		height: 200px;
+		background-color: skyblue;
+	}
+	.container
+	{
+		text-align: center;
+		width: 970px;
+		margin:0 auto;
+		height: 400px;
+		background-color: yellow;
+	}	
+	@media screen and (min-width: 0px) and (max-width: 1024px){
+		.container
+		{
+			width: 100%;
+		}
+	}
+	@media screen and (min-width: 521px) and (max-width: 820px){
+		.box1{ 
+		width: 40%; }
+		.box2{ 
+		width: 40%; }
+	}
+	@media screen and (min-width: 0px) and (max-width: 520px){
+		.box1{ 
+		width: 100%; }
+		.box2{ 
+		width: 100%; }
+	}
+	@media screen and (min-width: 601px) and (max-width: 900px){
+		.container{
+			background-color: orange;
+		}
+	}
+	@media screen and (min-width: 0px) and (max-width: 600px){
+		/** **/
+		.container{
+			background-color: blue;
+		} 
+	}
+</style>
