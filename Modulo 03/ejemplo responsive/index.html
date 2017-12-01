@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-with;initial-scale=1;user-scalable=0">
+	</head>
+	<body>
+		<div class="menu-modal">
+			<h1>Bienvenido a mi sitio web</h1>
+			<span>Te Recomiendo :</span>
+				<ul>
+						<li>INICIO</li>
+						<li>NOSOTROS</li>
+						<li>CONTACTO</li>
+						<li>INICIO</li>
+						<li>NOSOTROS</li>
+						<li>CONTACTO</li>
+					</ul>
+		</div>
+		<div class="container">
+			<header>
+				<nav class="navsite">
+					<span class="ico-nav">MENU</span>
+					<ul>
+						<li>INICIO</li>
+						<li>NOSOTROS</li>
+						<li>CONTACTO</li>
+						<li>INICIO</li>
+						<li>NOSOTROS</li>
+						<li>CONTACTO</li>
+					</ul>
+					
+					
+				</nav>
+
+			</header>
+		</div>
+		
+	</body>
+</html>
+<style>
+*{
+	margin:0;
+	padding: 0;
+}
+	.container{
+		width: 970px;
+		margin:0 auto;
+	}
+	.navsite{
+		background-color: black;
+		color: white;
+	}
+	.ico-nav{
+		display: none;
+		vertical-align: top;
+		padding: 15px;
+		font-family: arial;
+		
+	}
+	.navsite ul li{
+		display: inline-block;
+		vertical-align: top;
+		padding: 15px;
+		font-family: arial;
+	}
+	.navsite{
+		text-align: right;
+	}
+
+	.menu-modal{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: red;
+
+	}
+	.menu-modal{
+	text-align: center;
+	font-family: arial;
+	color: white;
+	padding:20px;
+	font-size: 20px;
+	display: none;
+	}
+	@media screen and (min-width: 0px) and (max-width: 970px){
+		/* propiedades para el media query */
+		.container{
+			width: 100%;
+		}
+	}
+ 	@media screen and (min-width: 0px) and (max-width: 800px){
+		/* propiedades para el media query */
+		.navsite ul{
+			display: block;
+		}
+		.navsite ul li {
+			display: block;
+		}
+		.ico-nav{
+			display: block;
+		}
+	}
+	
+</style>

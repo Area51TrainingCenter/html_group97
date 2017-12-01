@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+</head>
+<body>
+
+<div class="contenedor">
+	<header>
+		<nav class="nav-site">
+			<ul>
+				<li>Item</li>
+				<li>Item</li>
+				<li>Item</li>
+				<li>Item</li>
+			</ul>
+			
+			<div class="menudesplegado">
+				<ul>
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+								<li>Item</li>
+							</ul>
+			</div>
+
+		</nav>
+	</header>
+	<div class="textos">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+<div class="bar-shared"></div>
+<div class="link-up"></div>
+</body>
+</html>
+<style type="text/css">
+.bar-shared{ 
+width: 30px;
+height: 200px;
+background-color: black;
+position: fixed;
+left: 0px;
+top: 75px;
+}
+	.contenedor{
+		width: 500px;
+		margin:0 auto;padding-top: 60px;
+	}
+	.nav-site{
+		background-color: black;
+		color: white;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		z-index: 10;
+	}
+	.nav-site ul{
+		background-color: black;
+		z-index: 10000;
+		position: relative;
+		margin:0px;
+		padding: 20px;
+	}
+	.nav-site ul li{
+		display: inline-block;
+		vertical-align: top;
+		padding: 10px;
+		font-family: arial;
+	}
+	.textos{
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	.link-up{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+	}
+	.menudesplegado{
+		width: 100%;
+		height: 300px;
+		background-color: red;
+		position: fixed;
+		left: 0px;
+		top: -300px;
+		z-index: 10;
+	
+		display: block;
+transition: all 0.3s linear;
+z-index: 5;
+
+	}
+	.nav-site:hover .menudesplegado{
+		top: 70px;
+	}
+</style>
+

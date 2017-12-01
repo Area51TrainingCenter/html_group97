@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+.title-site:before{
+	content: "Titulo: ";
+	font-size: 30px;
+	color: red;
+}	
+.title-site:after{
+	content: ":";
+	font-size: 30px;
+	color: blue;
+}
+
+
+
+
+
+.parrafos p:first-child{
+	color: red;
+}
+
+.parrafos p:last-child{
+	color: blue;
+}
+.lista-pseudo{
+	list-style: none;
+}
+.lista-pseudo li{
+	position: relative;
+	padding-left: 15px;
+}
+.lista-pseudo li:before{
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	position: absolute;
+	left: 0px;
+	top: 4px;
+
+}
+</style>
+</head>
+<body>
+
+<h1 class="title-site">Usando psuedo selectores</h1>
+
+
+
+<div class="parrafos">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	</p>
+</div>
+
+<h2>Lista modificada con psuedo selectores</h2>
+<ul class="lista-pseudo">
+	<li>Lorem ipsum dolor sit amet, consectetur</li>
+	<li>Lorem ipsum dolor sit amet, consectetur</li>
+	<li>Lorem ipsum dolor sit amet, consectetur</li>
+	<li>Lorem ipsum dolor sit amet, consectetur</li>
+</ul>
+</body>
+</html>

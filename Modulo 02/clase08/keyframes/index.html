@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background-color: black;
+	}
+		.latido{
+			width: 100px;
+			height: 100px;
+			margin: 70px;
+			border-radius: 50%;
+			animation: mov 2s infinite;
+		}
+	</style>
+</head>
+<body>
+<div class="latido"></div>
+
+</body>
+</html>
+
+<style type="text/css">
+@-webkit-keyframes mov {
+     0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: red;}
+} 
+
+/* Standard syntax */ 
+@keyframes mov {
+      0% {background-color: red;}
+  	  50% {background-color: yellow;}
+  		100% {background-color: red;}
+}
+
+</style>

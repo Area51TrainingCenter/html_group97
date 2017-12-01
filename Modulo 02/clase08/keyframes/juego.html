@@ -1,0 +1,102 @@
+<html>
+	<head></head>
+	<body>
+		<div class="game">
+			<div class="jug1"></div>
+			<div class="jug2"></div>
+			<div class="line"></div>
+			<div class="ball"> </div>
+
+		</div>
+	</body>
+</html>
+<style>
+	.game{
+		width: 400px;
+		height: 300px;
+		background-color: black;
+		position: relative;
+	}
+	.jug1{
+		width: 20px;
+		height: 80px;
+		background-color: white;
+		position: absolute;
+
+		left: 10px;
+		top: 10px;
+		animation:mov1 5s infinite;
+	}
+	.jug2{
+		width: 20px;
+		height: 80px;
+		background-color: white;
+		position: absolute;
+
+		right: 10px;
+		top: 200px;
+		animation:mov2 5s infinite;
+	}
+	.line{
+		width: 2px;
+		height: 300px;
+		background-color: white;
+		position: absolute;
+		left: 50%;
+		margin-left: -1px;
+	}
+	.ball{
+		width: 20px;
+		height: 20px;
+		background-color: white;
+		position: absolute;
+		left: 40px;
+		top: 40px;
+			animation:ball 5s infinite;
+	}
+	@keyframes mov1 {
+      0% {top: 10px;}
+  	  20%{top:50px;}
+  	  50%{top:200px}
+  	  75%{top:120px}
+  	  100%{top: 10px}
+}
+@-webkit-keyframes mov1 {
+      0% {top: 10px;}
+  	  20%{top:50px;}
+  	  50%{top:200px}
+  	  75%{top:120px}
+  	  100%{top: 10px}
+}
+
+@keyframes mov2 {
+      0% {top: 200px;}
+  	  20%{top:180px;}
+  	  50%{top:10px}
+  	  75%{top:90px}
+  	  100%{top: 200px}
+}
+@-webkit-keyframes mov2 {
+      0% {top: 200px;}
+  	  20%{top:180px;}
+  	  50%{top:10px}
+  	  75%{top:90px}
+  	  100%{top: 200px}
+}
+
+@keyframes ball {
+      0% {transform:translate(100px,300px);}
+  	  20%{transform:translate(100px,300px)}
+  	  50%{transform:translate(100px,300px)}
+  	  75%{transform:translate(100px,300px)}
+  	  100%{transform:translate(100px,300px)}
+}
+@-webkit-keyframes ball {
+       0% {transform:translate(100px,300px);}
+  	  20%{transform:translate(100px,300px)}
+  	  50%{transform:translate(100px,300px)}
+  	  75%{transform:translate(100px,300px)}
+  	  100%{transform:translate(100px,300px)}
+}
+
+</style>
