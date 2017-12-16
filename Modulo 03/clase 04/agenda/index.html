@@ -1,0 +1,177 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+	<style>
+		.item-contacto{
+			width: 50%;
+			float: left;
+			border-radius: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-12">
+		 <h1>Registro: Contactos</h1>
+		</div>
+		<div class="col-md-6 well">
+
+
+			<form role="form" action="http://www.google.com">
+			  <div class="form-group">
+			    <label>Email</label>
+			    <input type="text" class="form-control" id="inpEmail"
+			           placeholder="Introduce tu email">
+			  </div>
+			 
+			   <div class="form-group">
+			    <label >Nombres</label>
+			    <input type="text" class="form-control" id="inpNombre"
+			           placeholder="Introduce Nombres">
+			  </div>
+			  <div class="form-group">
+			    <label >Apellidos</label>
+			    <input type="text" class="form-control" id="inpApellidos"
+			           placeholder="Introduce apellidos">
+			  </div>
+
+			  <div class="form-group">
+			    <label >Facebook</label>
+			    <input type="text" class="form-control" id="inpFacebook"
+			           placeholder="Introduce apellidos">
+			  </div>
+
+			  <div class="form-group">
+			    <label >Twitter</label>
+			    <input type="text" class="form-control" id="inpTwitter"
+			           placeholder="Introduce apellidos">
+			  </div>
+
+			   <div class="form-group">
+			    <label >Tipo</label>
+			    <!--<input type="text" class="form-control" id="inpTwitter"
+			           placeholder="Introduce apellidos">-->
+			           <select id="inpTipo" class="form-control">
+			           	<option value="escuela">
+			           		Amigos de Escuela
+			           	</option>
+			           	<option value="universidad">
+			           		Amigos de Universidad
+			           	</option>
+			           	<option value="trabajo">
+			           		Amigos de Trabajo
+			           	</option>
+			           </select>
+			  </div>
+
+
+
+
+			  <div class="form-group">
+			    <label for="ejemplo_archivo_1">Adjuntar un archivo</label>
+			    <input type="file" id="ejemplo_archivo_1">
+			  
+			  </div>
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox" id="copia"> Guardar una copia del archivo en Seguridad
+			    </label>
+			  </div>
+			  <button id="btngrabar" type="submit" class="btn btn-default">Grabar</button>
+			</form>
+
+
+		</div>
+		
+		<div class="col-md-6 well">
+			<ul class="nav nav-pills filtros">
+			  <li role="presentation" data-filtro="escuela"><a href="#">Escuela</a></li>
+			  <li role="presentation" data-filtro="universidad"><a href="#">Universidad</a></li>
+			  <li role="presentation" data-filtro="trabajo"><a href="#">Trabajo</a></li>
+			  <li role="presentation" data-filtro="todos"><a href="#">Todos</a></li>
+			</ul>
+<br>
+			<div class="row" id="lista-contactos">
+			  
+			
+
+			
+			  
+			</div>
+
+
+		</div>
+		<div id="elementos" class="col-md-12 well">
+
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/jquery-1.12.3.js">
+	</script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+/*
+
+
+$("#btngrabar").click(grabar);
+
+function grabar(){
+
+	var nombre=$("#inpNombre").val();
+	var appelido=$("#inpApellidos").val();
+	var correo=$("#inpEmail").val();
+	var facebook=$("#inpFacebook").val();
+	var twitter=$("#inpTwitter").val();
+	var tipo=$("#inpTipo").val();
+	console.log(tipo);
+	var lista=$("#lista-contactos");
+	  
+	lista.append('<div class="col-sm-6 col-md-6 agenda '+tipo + '">'
+				+'<div class="thumbnail">'
+				+'<img src="user.png" alt="...">'
+				+'<div class="caption">'
+				+' <h3>'+nombre+" "+appelido+"("+tipo+")"+'</h3>'
+				+'<p>'+correo+'</p>'
+				+'<p><a target="_blank" href="'+facebook+'" class="btn btn-primary" role="button">Facebook</a> <a href="'+twitter+'" target="_blank" class="btn btn-default" role="button">Twitter</a></p>'
+				+'</div></div></div>'
+
+		)
+			   
+			     
+			      
+			       
+			       
+			        
+			      
+			    
+			  
+	return false;
+}
+
+
+$(".filtros li").click(function (){
+	$(".filtros li").removeClass("active")
+
+	$(".agenda").hide();
+	$(this).addClass("active");
+	
+	var filtro=$(this).attr("data-filtro");
+
+	if(filtro=="todos"){
+		$(".agenda").show();
+	}
+	else{
+		$("."+filtro).show();
+	}
+
+
+
+})
+*/
+
+</script>

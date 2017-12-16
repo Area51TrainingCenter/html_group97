@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style>
+			.active{
+				background-color: black;
+				color: white;
+			}
+			li{display: inline-block;font-family: arial;padding: 10px}
+		</style>
+	</head>
+	<body>
+		<ul class="lista">
+			<li data-opcion="inicio" data-descripcion="bienvenido a la seccion inicio">Inicio</li>
+			<li data-opcion="contacto" data-descripcion="bienvenido a la seccion contacto">Contacto</li>
+			<li data-opcion="nosotros" data-descripcion="bienvenido a la seccion nosotros">Nosotros</li>
+
+		</ul>
+		<h1 id="title"></h1>
+		<p id="content"></p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</body>
+</html>
+
+<script>
+$(".lista li").click(function(){
+	$(".lista li").removeClass("active");
+	$(this).addClass("active");
+	var titulo=$(this).attr("data-opcion");
+	var descripcion=$(this).attr("data-descripcion");
+	//console.log(valor);
+	$("#title").html(titulo);
+	$("#content").html(descripcion);
+
+})
+	
+</script>

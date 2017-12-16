@@ -1,0 +1,87 @@
+.center{
+	width: 970px;
+	margin: 0 auto;
+}
+.box-item{
+	text-align: center;
+	display: none;
+}
+
+.ingredientes{
+	width: 30%;
+	float: left;
+	font-family: arial;
+}
+.ingredientes span{
+font-size: 20px;
+display: block;
+background-color: #ffb500;
+color: #23388b;
+padding: 15px;
+text-align: center;
+}
+
+.ingredientes ul li{
+font-size: 20px;
+margin: 10px;
+padding-left: 20px;
+}
+
+.ingredientes ul li:before{
+	content:"*";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 50%;
+	padding-top: 5px;
+	box-sizing:border-box;
+	position: relative;
+	top: 4px;margin-right: 20px;
+}
+.pedido{
+	width: 70%;
+	float: left;
+	font-family: arial;
+	font-size: 20px;
+}
+
+.pedido .detail{
+	padding: 30px;
+	
+}
+.pedido .detail ul{
+	margin-top: 20px;
+	margin-left: 30px;
+	min-height: 300px;
+}
+.pedido .detail ul li {
+	margin: 10px;
+}
+
+.opciones{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.btn-limpiar{
+	background-color: #ffb500;
+color: #23388b;
+padding: 15px;
+margin: 0px 20px;
+}
+.btn-grabar{
+	background-color: #ffb500;
+color: #23388b;
+padding: 15px;
+margin: 0px 20px;
+}
+.clear{
+	clear: both;
+}
+
+.mostrar{
+	display: block;
+}

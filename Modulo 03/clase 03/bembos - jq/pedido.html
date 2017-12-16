@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body>
+	<header>
+		<img src="head.png">
+	</header>
+
+	<div class="center">
+		<img src="banner.png">
+	<aside class="ingredientes">
+		<img src="burger.png">
+		<span>Ingredientes</span>
+		<ul class="lista-ingredientes">
+			<li data-ingrediente="Hamburgesa" 
+			data-estado="0" data-precio="10.0">Hamburgesa</li>
+			<li data-estado="0" data-ingrediente="Queso" data-precio="5.0">Queso</li>
+			<li data-estado="0" data-ingrediente="Jamon" data-precio="9.0">Jamon</li>
+			<li data-estado="0" data-ingrediente="Huevo" data-precio="4.0">Huevo</li>
+			<li data-estado="0" data-ingrediente="Piña" data-precio="2.0">Piña</li>
+		</ul>
+	</aside>
+	<section class="pedido">
+		<img width="100%" src="title.png">
+		<div class="detail">
+			<span>No existen ingredientes seleccionados</span>
+			<ul id="lista-pedido">
+				
+
+			</ul>
+		</div>
+		<div class="opciones">
+			<span id="btn-limpiar" class="btn-limpiar">Limpiar</span>
+			<span id="btn-grabar" class="btn-grabar">Grabar</span>
+		</div>
+	</section>
+	<div class="clear"></div>
+
+	</div>
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	$(".lista-ingredientes li").click(agregar);
+	function agregar(){
+		var estado=$(this).attr("data-estado");
+		if(estado=="0"){
+			var ing=$(this).attr("data-ingrediente");	
+			var precio=$(this).attr("data-precio");
+			$("#lista-pedido").append("<li>"+ing+"<span>/     Costo : "+precio+"</span></li>");
+			$(this).attr("data-estado","1");
+		}
+		else{
+			alert("Ya no se puede agregar el mismo elemento");
+		}
+
+		
+	}
+
+	$("#btn-limpiar").click(function(){
+			$("#lista-pedido").html("");
+			$(".lista-ingredientes li").attr("data-estado","0");
+	})
+</script>

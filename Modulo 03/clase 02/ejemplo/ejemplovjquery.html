@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<style>
+		.resultado{
+			font-weight: bold;
+			color: red;
+			font-family: arial;
+			padding: 20px;
+			display: inline-block;
+			}</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!--<script src="js/jquery-3.2.1.min"></script>-->
+
+	</head>
+	<body>
+		<form action="" id="calcular">
+		<input type="text" class="inp" id="num1" placeholder="ingresar numero 1">
+		<input type="text" id="num2" class="inp"  placeholder="ingresar numero 2">
+		<span id="calcresultadoular">calcular</span>
+		<span id="borrar">Borrar Valores</span>
+		<span id="resultado" class="resultado"></span>
+		</form>
+	
+	</body>
+</html>
+<script>
+	$("#calcresultadoular").click(function (){
+		var n1=$("#num1").val();
+		var n2=$("#num2").val();
+		$("#resultado").text(parseInt(n1)+parseInt(n2));
+	});
+
+	/*var calcular=document.getElementById('calcular');
+	calcular.addEventListener("click",tarea)*/
+	function tarea(){
+		var n1=$("#num1").val();
+		var n2=$("#num2").val();
+		var suma=parseInt(n1)+parseInt(n2);
+		$("#resultado").text(suma);
+
+	}
+</script>

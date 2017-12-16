@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body>
+	<header>
+		<img src="head.png">
+	</header>
+
+	<div class="center">
+		<img src="banner.png">
+		<section>
+			<img id="titulo1" src="title.png">
+			<div id="bloque1" data-estado="0"class="box-item">
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+			</div>
+		</section>
+		<section>
+			<img id="titulo2" src="title2.png">
+			<div id="bloque2"  data-estado="0" class="box-item">
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+				<a href="pedido.html"><img src="item.png"></a>
+			</div>
+		</section>
+
+
+	</div>	
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+	
+$("#titulo1").click(mensaje);
+function mensaje(){
+	// addClass : agregar clase al elemento seleccionado
+//$("#bloque1").addClass("mostrar"); 
+// permuta la clase en elemento dependiendo si existe o no
+//$("#bloque1").toggleClass("mostrar");
+//$("#bloque1").toggle("slow");
+
+$("#bloque1").slideToggle(3000);
+
+}
+
+$("#titulo2").click(mensaje2);
+
+function mensaje2(){
+$("#bloque2").toggle();
+}
+
+</script>
